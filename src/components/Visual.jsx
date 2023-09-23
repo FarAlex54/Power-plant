@@ -37,22 +37,22 @@ const Visual = () => {
             <div className="position-hand" style={{transform: 'rotate('+position+'deg)'}}></div>
           </div>
           <div className='d-flex flex-column justify-content-between'>
-            <div>id: {visualContext.info[0].id}</div>
-            <div>posInControl: {visualContext.info[0].kran}</div>
+            <div>id:{/*  {visualContext.info[0].id} */}</div>
+            <div>posInControl: {/* {visualContext.info[0].kran} */}</div>
           </div>
         </div>
         <div className='d-flex flex-row flex-fill align-items-end'>
           <div className='w-25'><img src="/img/Tank1.png" className='img-fluid' alt="" /></div>
           <div className='d-flex flex-fill flex-column'>
             <div className='feed_pipe d-flex flex-row justify-content-end'>
-              <div>Out: {visualContext.info[0].kotOut}</div>
+              <div>Out: {/* {visualContext.info[0].kotOut} */}</div>
             </div>
             <div className="d-flex flex-row justify-content-center">
               <div className='return_circle'></div>
             </div>
             <div className='return_pipe mb-3 d-flex flex-row justify-content-between'>
-              <div>posInBase: {visualContext.info[0].kran}</div>
-              <div>In: {visualContext.info[0].kotIn}</div>
+              <div>posInBase: {/* {visualContext.info[0].kran} */}</div>
+              <div>In: {/* {visualContext.info[0].kotIn} */}</div>
             </div>
           </div>
           <div className='w-25'><img src="/img/kotel2.png" className='img-fluid' alt="" /></div>

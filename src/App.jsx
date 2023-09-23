@@ -11,15 +11,15 @@ export const AppContext = React.createContext({});
 function App() {
   const [info,setInfo] = useState();
   const [infoAll,setInfoAll] = useState();
-  const [isLoading, setLoading] = useState(true); //состояние получения ответа axios при открытии приложения
+  const [isLoading, setLoading] = useState(false); //состояние получения ответа axios при открытии приложения
   const [checkDate, setCheckDate] = useState(false);
   useEffect (()=>{
     async function axiosData(){
 /*       console.log('Выполнилась функция axiosData'); */
-      await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
+/*       await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
             .then(infoData=>{setInfo(infoData.data);setLoading(false)})
       const infoAllData = await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
-      setInfoAll(infoAllData.data);
+      setInfoAll(infoAllData.data); */
     }
     if (checkDate) {axiosData();setCheckDate(false)}
     axiosData();
