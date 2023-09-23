@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import '../App.css';
 import { AppContext } from '../App';
 import { Button } from 'react-bootstrap';
-/* import {InputGroup} from 'react-bootstrap'; */
+
 
 
 
@@ -17,11 +17,6 @@ const Visual = () => {
     <div className='d-flex flex-column align-items-center'>
         <div className="d-flex flex-row">
           <div className='d-flex flex-column'>
-{/*             <InputGroup>
-              <InputGroup.Prepend>
-                <InputGroup.Radio aria-label="Radio button for following text input" />
-              </InputGroup.Prepend>
-            </InputGroup> */}
           </div>
           <div className='d-flex flex-column justify-content-between'>
             <Button onClick={()=>clickUp()}>Up</Button>
@@ -37,8 +32,8 @@ const Visual = () => {
             <div className="position-hand" style={{transform: 'rotate('+position+'deg)'}}></div>
           </div>
           <div className='d-flex flex-column justify-content-between'>
-            <div>id:{/*  {visualContext.info[0].id} */}</div>
-            <div>posInControl: {/* {visualContext.info[0].kran} */}</div>
+            <div>id: {/* {visualContext.info[0].id} */}</div>
+            <div>posInControl:{/*  {visualContext.info[0].kran} */}</div>
           </div>
         </div>
         <div className='d-flex flex-row flex-fill align-items-end'>

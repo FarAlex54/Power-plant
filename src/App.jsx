@@ -7,6 +7,8 @@ import Header from './components/Header.jsx'
 import Body from './components/Body.jsx'
 import Footer from './components/Footer.jsx'
 
+/* "homepage": "https://github.com/FarAlex54/Power-plant.git", */
+
 export const AppContext = React.createContext({});
 function App() {
   const [info,setInfo] = useState();
@@ -16,10 +18,10 @@ function App() {
   useEffect (()=>{
     async function axiosData(){
 /*       console.log('Выполнилась функция axiosData'); */
-/*       await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
+      await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
             .then(infoData=>{setInfo(infoData.data);setLoading(false)})
       const infoAllData = await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
-      setInfoAll(infoAllData.data); */
+      setInfoAll(infoAllData.data);
     }
     if (checkDate) {axiosData();setCheckDate(false)}
     axiosData();
