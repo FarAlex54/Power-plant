@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/FarAlex54/Power-plant.git/static/css/main.c7a3ac2d.css",
+    "main.js": "/FarAlex54/Power-plant.git/static/js/main.0d0e905b.js",
+    "static/js/787.4bb30ad2.chunk.js": "/FarAlex54/Power-plant.git/static/js/787.4bb30ad2.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/FarAlex54/Power-plant.git/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/FarAlex54/Power-plant.git/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/FarAlex54/Power-plant.git/index.html",
+    "main.c7a3ac2d.css.map": "/FarAlex54/Power-plant.git/static/css/main.c7a3ac2d.css.map",
+    "main.0d0e905b.js.map": "/FarAlex54/Power-plant.git/static/js/main.0d0e905b.js.map",
+    "787.4bb30ad2.chunk.js.map": "/FarAlex54/Power-plant.git/static/js/787.4bb30ad2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7a3ac2d.css",
+    "static/js/main.0d0e905b.js"
+  ]
+}
