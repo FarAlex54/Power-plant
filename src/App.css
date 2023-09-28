@@ -70,3 +70,12 @@
   transform-origin: 0% 0px;
   transform: rotate(0deg);
 }
+@media screen and (max-width: 2024px) {
+  .classFont { font-size: 1.0rem; }
+ }
+ @media screen and (max-width: 1024px) {
+  .classFont { font-size: 0.8rem; }
+ }
+ @media screen and (max-width: 600px) {
+  .classFont { font-size: 0.6rem; }
+ }
