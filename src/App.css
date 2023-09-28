@@ -23,8 +23,8 @@
 /*стили для трехходового клапана*/
 .table_valve {
   background: #ececec;
-  width: 20vh;
-  height: 20vh;
+  width: 9.7vw;
+  height: 9.7vw;
   margin: 5% auto 0;
   border-radius: 50%;
   border: 0.1vh solid #333;
@@ -54,17 +54,17 @@
  /*  left: 50%; */
  /*  top: 50%; */
   margin-top: -0.1vh;
-  transform-origin: 50% 10vh;
+  transform-origin: 50% 4.85vw;
 }
 .position-hand {
   position: absolute;
   z-index: 6;
-  width: 1vh;
-  height: 10vh;
+  width: 0.48vw;
+  height: 4.8vw;
   background: red;
   top: 53%;
   left: 50%;
-  margin-left: -0.5vh;
+  margin-left: -0.24vw;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   transform-origin: 0% 0px;
