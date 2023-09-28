@@ -14,13 +14,13 @@ const Visual = () => {
   const clickDown=()=>{if(position+3 < 0){setPosition(position+3);console.log(position);}
   else{setPosition(0);console.log('клапан полностью открыт');}}
   return (
-    <div className='d-flex flex-column align-items-center'>
+    <div className='d-flex flex-column align-items-center classFont'>
         <div className="d-flex flex-row">
           <div className='d-flex flex-column'>
           </div>
           <div className='d-flex flex-column justify-content-between'>
-            <Button onClick={()=>clickUp()}>Up</Button>
-            <Button onClick={()=>clickDown()}>Down</Button>
+            <Button variant='success' size='sm' onClick={()=>clickUp()}>Up</Button>
+            <Button variant='success' size='sm' onClick={()=>clickDown()}>Down</Button>
           </div>
           <div className='table_valve d-flex flex-row justify-content-center'>
             <div className='dot_center'></div>
