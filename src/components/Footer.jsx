@@ -1,10 +1,16 @@
 import React from 'react'
+import {Container, Row, Col} from'react-bootstrap';
+
 
 const Footer = () => {
   return (
-    <div className='bg-secondary'>
-        <p>Footer</p>
-    </div>
+    <Container className='bg-secondary' fluid>
+      <Row>
+        <Col className='text-center'>
+          <p className='text-white'>Power Plant</p>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

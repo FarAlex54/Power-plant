@@ -15,9 +15,14 @@ function App() {
   const [infoAll,setInfoAll] = useState();
   const [isLoading, setLoading] = useState(false); //состояние получения ответа axios при открытии приложения
   const [checkDate, setCheckDate] = useState(false);
-  useEffect (()=>{
+  const [tempData, setTempData] = useState({
+    kotIn:0,
+    kotOut:0,
+    tankIn:0,
+    tankOut:0
+  });
+/*   useEffect (()=>{
     async function axiosData(){
-/*       console.log('Выполнилась функция axiosData'); */
       await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
             .then(infoData=>{setInfo(infoData.data);setLoading(false)})
       const infoAllData = await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
@@ -28,17 +33,19 @@ function App() {
   },[checkDate]);
   if (isLoading) {
     return <div className="App">Loading...</div>;
-  }
+  } */
   return (
     <AppContext.Provider
     value={
       {info, setInfo,
        infoAll,setInfoAll,
-       checkDate, setCheckDate
+       checkDate, setCheckDate,
+       tempData, setTempData
       }
     }>
 
       <div className="App">
+        
         <Header/>
         <Body/>
         <Footer/>
