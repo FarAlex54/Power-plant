@@ -61,7 +61,7 @@ const Visual = () => {
                 transformOrigin: heighBox*0.45+'px'
               }
               i++;                  
-              return <div className='grade' style={containerStyleGrade}></div>
+              return <div key={i} className='grade' style={containerStyleGrade}></div>
                     })}
             <div className="position-hand" style={containerStyleHand}></div>
           </Col>
