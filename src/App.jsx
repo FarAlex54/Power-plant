@@ -11,36 +11,42 @@ import Footer from './components/Footer.jsx'
 
 export const AppContext = React.createContext({});
 function App() {
-  const [info,setInfo] = useState();
-  const [infoAll,setInfoAll] = useState();
-  const [isLoading, setLoading] = useState(false); //состояние получения ответа axios при открытии приложения
-  const [checkDate, setCheckDate] = useState(false);
-  const [tempData, setTempData] = useState({
+  const [info,setInfo] = useState({
+    id:0,
+    dates:'00:00:00',
+    kran:0,
     kotIn:0,
     kotOut:0,
     tankIn:0,
-    tankOut:0
+    tankOut:0    
   });
-/*   useEffect (()=>{
+  const [infoAll,setInfoAll] = useState();
+  const [checkDate, setCheckDate] = useState(false);
+  useEffect (()=>{
     async function axiosData(){
       await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
-            .then(infoData=>{setInfo(infoData.data);setLoading(false)})
-      const infoAllData = await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
-      setInfoAll(infoAllData.data);
+            .then(infoData=>{updateDate(infoData);})
     }
     if (checkDate) {axiosData();setCheckDate(false)}
-    axiosData();
   },[checkDate]);
-  if (isLoading) {
-    return <div className="App">Loading...</div>;
-  } */
+  function updateDate(infoData){//преобразование температурных данных
+    const e = {
+      id: infoData.data[0].id,
+      dates: infoData.data[0].dates,
+      kran: infoData.data[0].kran,
+      kotIn: infoData.data[0].kotIn/100,
+      kotOut:infoData.data[0].kotOut/100,
+      tankIn:infoData.data[0].tankIn/100,
+      tankOut:infoData.data[0].tankOut/100  
+    }
+    setInfo(e);
+  }
   return (
     <AppContext.Provider
     value={
       {info, setInfo,
        infoAll,setInfoAll,
-       checkDate, setCheckDate,
-       tempData, setTempData
+       checkDate, setCheckDate
       }
     }>
 

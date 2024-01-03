@@ -6,6 +6,16 @@
   position: absolute;
   z-index: 1;
 }
+.getData{
+  position: absolute;
+  top: 35%;
+  font-size:60%;
+  animation: myBlinking 1s infinite alternate;
+}
+@keyframes myBlinking {
+  from {opacity:0.2;}
+  to {opacity: 1;}
+}
 .center{
   position:absolute;
   border-radius:50%;

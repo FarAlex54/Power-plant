@@ -7,26 +7,23 @@ import { AppContext } from '../App';
 
 const Analytic = () => {
   const analyticContext = useContext(AppContext);
-  function edit(prop, event) {
-    analyticContext.setTempData({...analyticContext.tempData, ...{[prop]: event.target.value}});
-  }
   return (
     <Container fluid>
       <InputGroup className="mt-3">
         <InputGroup.Text id="kotIn">подача котел</InputGroup.Text>
-        <Form.Control aria-describedby="kotIn" onChange={event => edit('kotIn', event)}/>
+        <Form.Control aria-describedby="kotIn"/>
       </InputGroup>
       <InputGroup className="mt-3">
         <InputGroup.Text id="kotOut">обратка котел</InputGroup.Text>
-        <Form.Control aria-describedby="kotOut" onChange={event => edit('kotOut', event)}/>
+        <Form.Control aria-describedby="kotOut" />
       </InputGroup>
       <InputGroup className="mt-3">
         <InputGroup.Text id="TankIn">обратка из дома</InputGroup.Text>
-        <Form.Control aria-describedby="TankIn" onChange={event => edit('tankIn', event)}/>
+        <Form.Control aria-describedby="TankIn"/>
       </InputGroup>
       <InputGroup className="mt-3">
         <InputGroup.Text id="TankOut">подача в дом</InputGroup.Text>
-        <Form.Control aria-describedby="TankOut" onChange={event => edit('tankOut', event)}/>
+        <Form.Control aria-describedby="TankOut" />
       </InputGroup>
       <CardItem></CardItem>
     </Container>

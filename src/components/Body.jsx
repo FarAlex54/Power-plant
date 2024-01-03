@@ -7,26 +7,17 @@ import {Container, Row, Col} from'react-bootstrap';
 
 
 const Body = () => {
-
-
-
   return (  
     <Container fluid className='bg-info'>
       <Row>
-        <Col xxl={5} xl={5} className=''>
+        <Col xxl md={{span: 5, order: 'first'}} sm={{order: 'last'}} xs={{order: 'last'}} className=''>
           <Analytic/>
         </Col>
-        <Col xxl={7} xl={7} className=''>
+        <Col xxl md={{span: 7, order: 'last'}} sm={{order: 'first'}} xs={{order: 'first'}} className=''>
           <Visual/>
         </Col>
-      </Row>
-      
-      
+      </Row>     
     </Container>
-    // <div className='d-flex flex-row bg-info'>
-    //     <Analytic/>
-    //     <Visual/>
-    // </div>
   )
 }
 
