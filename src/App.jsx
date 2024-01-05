@@ -24,7 +24,7 @@ function App() {
   const [checkDate, setCheckDate] = useState(false);
   useEffect (()=>{
     async function axiosData(){
-      await axios.get('http://192.168.2.180/modules/prino/singlerecords.php')
+      await axios.get('//192.168.2.180/modules/prino/singlerecords.php')
             .then(infoData=>{updateDate(infoData);})
     }
     if (checkDate) {axiosData();setCheckDate(false)}

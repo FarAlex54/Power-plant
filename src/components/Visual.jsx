@@ -42,6 +42,7 @@ const Visual = () => {
             <div>Kot out = {visualContext.info.kotOut}</div>
             <div>id = {visualContext.info.id}</div>
             <div>Kran = {visualContext.info.kran}</div>
+            <div>Position = {(position-270)/3}</div>
           </Col>
           <Col className='m-auto'> {/* кнопки */}
             <Row className='justify-content-end pb-4'>
